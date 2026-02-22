@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Home</class>
+ <widget class="QMainWindow" name="Home">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1200</width>
+    <height>720</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>-30</y>
+      <width>1200</width>
+      <height>720</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>1200</width>
+      <height>720</height>
+     </size>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>C:/Users/ACER/OneDrive/Pictures/Beige and Brown Minimalist Modern Business Presentation.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="brandTitle">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>140</y>
+      <width>381</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+font-family: &quot;Allura&quot;;
+font-size: 80px;
+font-weight: normal; 
+color: #fbf5e9;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:48pt;&quot;&gt;LUMORA&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnBooking">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>360</y>
+      <width>151</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #fbf5e9;
+ font-family: &quot;Inter&quot;;
+    color:  #7b6046;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px 22px;
+    border-radius: 18px;
+}
+
+QPushButton:hover {
+    background-color: #ebd6c1
+;
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string>BOOKING</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnLogin">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>360</y>
+      <width>151</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #fbf5e9;
+ font-family: &quot;Inter&quot;;
+    color:  #7b6046;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px 22px;
+    border-radius: 18px;
+}
+
+QPushButton:hover {
+    background-color: #ebd6c1
+;
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string>LOGIN</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>250</y>
+      <width>511</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    font-family: &quot;Playfair Display&quot;;
+    font-size: 28px;
+    font-weight: 600;
+    color: #fbf5e9;
+   letter-spacing: 1px;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>- Professional photography studio -</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>71</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>C:/Users/ACER/OneDrive/Pictures/logo2.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>550</y>
+      <width>441</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+color: rgb(123, 96, 70);</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;──────────── ✧ ✦ ✧ ────────────&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>460</y>
+      <width>461</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    font-family: &quot;Playfair Display&quot;;
+    color: #fbf5e9;
+    font-size: 15px;
+    font-style: italic;
+    letter-spacing: 1px;
+}</string>
+    </property>
+    <property name="text">
+     <string>“Book the Light, Capture the Moment”</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>30</y>
+      <width>432</width>
+      <height>45</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="btnHome">
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: transparent;
+ font-family: &quot;Inter&quot;;
+    color: #7b6046;
+    font-size: 16px;
+    padding: 6px 14px;
+    border: none;
+}
+
+QPushButton:hover {
+    color: #4e3b2a;
+    border-bottom: 2px solid #7b6046;
+}
+QPushButton {
+ 
+    font-weight: 600;
+    padding: 10px 18px;
+    border-radius: 10px;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>HOME</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnGallery">
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: transparent;
+ font-family: &quot;Inter&quot;;
+    color: #7b6046;
+    font-size: 16px;
+    padding: 6px 14px;
+    border: none;
+}
+
+QPushButton:hover {
+    color: #4e3b2a;
+    border-bottom: 2px solid #7b6046;
+}
+QPushButton {
+ 
+    font-weight: 600;
+    padding: 10px 18px;
+    border-radius: 10px;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>GALLERY</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnGallery_2">
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: transparent;
+ font-family: &quot;Inter&quot;;
+    color: #7b6046;
+    font-size: 16px;
+    padding: 6px 14px;
+    border: none;
+}
+
+QPushButton:hover {
+    color: #4e3b2a;
+    border-bottom: 2px solid #7b6046;
+}
+QPushButton {
+ 
+    font-weight: 600;
+    padding: 10px 18px;
+    border-radius: 10px;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>REVIEW</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnContact">
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: transparent;
+ font-family: &quot;Inter&quot;;
+    color: #7b6046;
+    font-size: 16px;
+    padding: 6px 14px;
+    border: none;
+}
+
+QPushButton:hover {
+    color: #4e3b2a;
+    border-bottom: 2px solid #7b6046;
+}
+QPushButton {
+ 
+    font-weight: 600;
+    padding: 10px 18px;
+    border-radius: 10px;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>CONTACT</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1200</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
