@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>MainWindow</class>
- <widget class="QMainWindow" name="MainWindow">
+ <class>LoginMainWindow</class>
+ <widget class="QMainWindow" name="LoginMainWindow">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -120,7 +120,7 @@ QLineEdit:focus {
 </string>
           </property>
           <property name="echoMode">
-           <enum>QLineEdit::Password</enum>
+           <enum>QLineEdit::EchoMode::Password</enum>
           </property>
           <property name="placeholderText">
            <string>Enter your password </string>
@@ -169,34 +169,6 @@ QPushButton:pressed {
            </size>
           </property>
          </widget>
-         <widget class="QPushButton" name="pushButtonForgot">
-          <property name="geometry">
-           <rect>
-            <x>240</x>
-            <y>480</y>
-            <width>151</width>
-            <height>28</height>
-           </rect>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">QPushButton {
-    color: #1f5fbf;
-    font-size: 15px;
-font-family: &quot;Inter&quot;;
-}
-
-QPushButton:hover {
-    text-decoration: underline;
-}
-</string>
-          </property>
-          <property name="text">
-           <string>Forgot password?</string>
-          </property>
-          <property name="flat">
-           <bool>true</bool>
-          </property>
-         </widget>
          <widget class="QLabel" name="label_2">
           <property name="geometry">
            <rect>
@@ -220,7 +192,7 @@ QPushButton:hover {
            <string>LOGIN</string>
           </property>
           <property name="alignment">
-           <set>Qt::AlignCenter</set>
+           <set>Qt::AlignmentFlag::AlignCenter</set>
           </property>
          </widget>
          <widget class="QLabel" name="label_3">
@@ -293,7 +265,7 @@ font-weight: normal;
           <string>LUMORA</string>
          </property>
          <property name="alignment">
-          <set>Qt::AlignCenter</set>
+          <set>Qt::AlignmentFlag::AlignCenter</set>
          </property>
         </widget>
         <widget class="QLabel" name="label_6">
@@ -320,7 +292,7 @@ font-weight: normal;
           <string>- Professional photography studio -</string>
          </property>
          <property name="alignment">
-          <set>Qt::AlignCenter</set>
+          <set>Qt::AlignmentFlag::AlignCenter</set>
          </property>
         </widget>
         <widget class="QLabel" name="label_7">
@@ -398,7 +370,7 @@ Capturing your most beautiful moments
 Our experienced photography team</string>
          </property>
          <property name="alignment">
-          <set>Qt::AlignCenter</set>
+          <set>Qt::AlignmentFlag::AlignCenter</set>
          </property>
         </widget>
         <widget class="QLabel" name="label_9">
@@ -471,7 +443,7 @@ Our experienced photography team</string>
      <x>0</x>
      <y>0</y>
      <width>1200</width>
-     <height>26</height>
+     <height>30</height>
     </rect>
    </property>
   </widget>
