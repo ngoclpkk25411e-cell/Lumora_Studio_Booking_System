@@ -1,6 +1,6 @@
 from PyQt6.QtWidgets import QApplication, QMainWindow
 
-from Do_an.Review.MainWindowEx import MainWindowEx
+from Do_an.Login.MainWIindowEx import MainWindowEx
 
 app=QApplication([])
 gui=MainWindowEx()
