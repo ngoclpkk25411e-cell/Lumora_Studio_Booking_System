@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>770</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1000</width>
+    <height>770</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1000</width>
+    <height>770</height>
+   </size>
+  </property>
+  <property name="sizeIncrement">
+   <size>
+    <width>1000</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/* ===== GLOBAL FONT ===== */
+* {
+    font-family: &quot;Playfair Display&quot;;
+}
+
+/* ===== PAGE BACKGROUND ===== */
+QMainWindow {
+    background-color: #F5EBDD;
+}
+
+/* ===== GALLERY TITLE ===== */
+#galleryTitle {
+    color: #6B3F2A;
+    font-size: 32px;
+    font-weight: bold;
+    
+}
+
+/* ===== GALLERY FRAME (KHUNG NGOÀI) ===== */
+#galleryFrame {
+    background-color: #F8F1E8;
+    border: 2px solid #C28B5D;    /* nâu caramel */
+    border-radius: 22px;          /* bo góc ngoài */
+    padding: 20px;
+}
+
+/* ===== IMAGE BOXES — VUÔNG, KHÔNG BO GÓC ===== */
+#img_1, 
+#img_2, 
+#img_3, 
+#img_4, 
+#img_5, 
+#img_6, 
+#img_7, 
+#img_8, 
+#img_9 {
+    background-color: #FFF9F3;
+    border: 2px solid #C28B5D;   /* màu nâu giống mẫu */
+    border-radius: 0px;          /* VUÔNG hoàn toàn */
+    padding: 0px;
+}
+
+/* ===== VIEW MORE BUTTON ===== */
+#viewMoreButton {
+    color: #FFFFFF;
+    background-color: #B8845E;
+    border-radius: 24px;
+    padding: 10px 35px;
+    font-size: 18px;
+    border: none;
+}
+
+#viewMoreButton:hover {
+    background-color: #A6734D;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>1060</x>
+      <y>0</y>
+      <width>131</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../../guest_booking/images/Subject 2.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>-20</y>
+      <width>251</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel#label_2 {
+    color: #6e4c35;
+    font-family: &quot;Playfair Display&quot;;
+    font-size: 38px;
+    font-weight: 600;
+    background-color:transparent;
+}</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:38pt;&quot;&gt;Gallery&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelBirthday">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>70</y>
+      <width>251</width>
+      <height>331</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>5555555</width>
+      <height>16777215</height>
+     </size>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../images/z7605046228493_b2502f01ab46685710a569ecda6b2745.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelPortrait">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>70</y>
+      <width>251</width>
+      <height>331</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>55555</width>
+      <height>55555</height>
+     </size>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../images/z7605046228573_f50c8f856f4df3addf716125ad51f183.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelGeneration">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>430</y>
+      <width>211</width>
+      <height>271</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>44455</width>
+      <height>544444</height>
+     </size>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../images/z7605046108556_93759be82836558ea65f0fcb8a31af4b.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelPreWedding">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>430</y>
+      <width>211</width>
+      <height>271</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>55555</width>
+      <height>555555</height>
+     </size>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../images/z7605046184771_48c2eda2fa3f9692a5f37787d3114db2.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelProfile">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>430</y>
+      <width>201</width>
+      <height>271</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>544444</width>
+      <height>5444444</height>
+     </size>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../images/z7605046126575_8d54da41a26d0c3c3f12305c138c537e.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonBack">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>30</y>
+      <width>71</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Playfair Display</family>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="whatsThis">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Back&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#pushButtonBack {
+    background-color: transparent;
+    border-radius: 18px;
+}
+
+QPushButton#pushButtonBack:hover {
+    background-color: #E8D8C4;
+}</string>
+    </property>
+    <property name="text">
+     <string>Back</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../contact/images/left_arrow.png</normaloff>../../contact/images/left_arrow.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>30</width>
+      <height>30</height>
+     </size>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1000</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
