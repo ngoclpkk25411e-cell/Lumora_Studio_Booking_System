@@ -1,6 +1,6 @@
 from PyQt6.QtWidgets import QApplication, QMainWindow
 
-from Lumora_Studio_Booking_System.admin_ui.content.ui.ContentMainWindowEx import ContentMainWindowEx
+from admin_ui.content.ui.ContentMainWindowEx import ContentMainWindowEx
 
 app=QApplication([])
 gui=ContentMainWindowEx()

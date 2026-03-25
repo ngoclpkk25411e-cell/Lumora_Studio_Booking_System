@@ -119,53 +119,27 @@ letter-spacing: 2px;</string>
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>380</x>
-      <y>34</y>
-      <width>500</width>
-      <height>52</height>
+      <x>440</x>
+      <y>40</y>
+      <width>371</width>
+      <height>41</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background: transparent;
-border: none;
-color: rgb(93, 58, 26);</string>
+     <string notr="true">color: rgb(93, 58, 26);</string>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:28pt; font-weight:700;&quot;&gt;Content Management&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:36pt; font-weight:600;&quot;&gt;Content Management&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButtonBack">
     <property name="geometry">
      <rect>
-      <x>28</x>
-      <y>38</y>
-      <width>90</width>
-      <height>34</height>
+      <x>30</x>
+      <y>40</y>
+      <width>81</width>
+      <height>31</height>
      </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QPushButton {
-    background: transparent;
-    border: none;
-    color: #8B5A2B;
-    font-family: &quot;Times New Roman&quot;;
-    font-size: 16px;
-    font-weight: 700;
-    padding: 0px 6px;
-    text-align: left;
-}
-QPushButton:hover {
-    background: transparent;
-    color: #6B3F1D;
-    text-decoration: underline;
-}
-QPushButton:pressed {
-    background: transparent;
-    color: #5A3418;
-}</string>
     </property>
     <property name="text">
      <string>Back</string>
@@ -367,6 +341,7 @@ QPushButton:hover {
                 <font>
                  <family>Playfair Display</family>
                  <pointsize>-1</pointsize>
+                 <fontweight>DemiBold</fontweight>
                 </font>
                </property>
                <property name="styleSheet">
@@ -759,6 +734,7 @@ QPushButton:hover {
               <font>
                <family>Playfair Display</family>
                <pointsize>-1</pointsize>
+               <fontweight>DemiBold</fontweight>
               </font>
              </property>
              <property name="styleSheet">
