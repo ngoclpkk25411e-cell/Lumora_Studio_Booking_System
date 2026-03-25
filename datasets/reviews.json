@@ -1,0 +1,76 @@
+{
+    "reviews": [
+        {
+            "name": "Lê Hạ Trúc An",
+            "email": "lehatrucan2007@gmail.com",
+            "rating": 5,
+            "review": "Perfect photos, nice service.",
+            "created_at": "2026-03-21 11:35:22"
+        },
+        {
+            "name": "Việt Phúc",
+            "email": "phuc@gmail.com",
+            "rating": 5,
+            "review": "Good",
+            "created_at": "2026-03-17 11:03:12"
+        },
+        {
+            "name": "Minh Tú",
+            "email": "tulmk25411e@st.uel.edu.vn",
+            "rating": 3,
+            "review": "Hay",
+            "created_at": "2026-03-17 07:06:17"
+        },
+        {
+            "name": "Hạnh Nguyên",
+            "email": "nguyentnhk25411e@st.uel.edu.vn",
+            "rating": 4,
+            "review": "Good photos.",
+            "created_at": "2026-03-16 23:33:55"
+        },
+        {
+            "name": "Quỳnh Như",
+            "email": "nhuqlk25411e@st.uel.edu.vn",
+            "rating": 5,
+            "review": "Nice service, makeup look and photos",
+            "created_at": "2026-03-16 23:32:52"
+        },
+        {
+            "name": "Khánh Ngọc",
+            "email": "nle23023@gmail.com",
+            "rating": 5,
+            "review": "Good service."
+        },
+        {
+            "name": "Lê Phan Khánh Ngọc",
+            "email": "ngoclpkk25411e@st.uel.edu.vn",
+            "rating": 4,
+            "review": "Good photo."
+        },
+        {
+            "name": "Việt Phúc",
+            "email": "phucnvk25411e@st.uel.edu.vn",
+            "rating": 5,
+            "review": "Good."
+        },
+        {
+            "name": "Anna",
+            "email": "anna@gmail.com",
+            "rating": 5,
+            "review": "Amazing photoshoot",
+            "created_at": "2026-03-15 10:20"
+        },
+        {
+            "name": "Trúc An",
+            "email": "anlhtk25411e@st.uel.edu.vn",
+            "rating": 5,
+            "review": "Ảnh đẹp"
+        },
+        {
+            "name": "Hạnh Nguyên",
+            "email": "nguyentnhk25411e@st.uel.edu.vn",
+            "rating": 4,
+            "review": "Good service, good photos"
+        }
+    ]
+}
