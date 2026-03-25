@@ -1,0 +1,1066 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>730</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1200</width>
+    <height>730</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1200</width>
+    <height>730</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Quản Lý Lịch Hẹn - Admin</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget {
+    background-color: #fbf5e9;
+    font-family: &quot;Inter&quot;;
+    color: #3a2e24;
+}
+
+   </string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="lbl_title">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>10</y>
+      <width>450</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>450</width>
+      <height>50</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>16777215</width>
+      <height>50</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    background-color: #b08968;
+    border-radius: 14px;
+    color: #ffffff;
+font-family: &quot;Playfair Display&quot;;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 0px;
+}</string>
+    </property>
+    <property name="text">
+     <string>Appointment Management </string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>70</y>
+      <width>1200</width>
+      <height>301</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>4</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>1200</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>1200</width>
+      <height>16777215</height>
+     </size>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LayoutDirection::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTabWidget::pane {
+ border-radius: 10px;
+}
+
+QTabBar::tab {
+    background: #ebd6c1;
+    color: #3a2e24;
+    padding: 8px 18px;
+    border-radius: 10px;
+    margin-right: 6px;
+    font-weight: 500;
+font-family: &quot;Inter&quot;;
+}
+
+QTabBar::tab:selected {
+    background: #b08968;
+    color: white;
+}
+
+</string>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="tab_lich_hen">
+     <attribute name="title">
+      <string>    List of Appoinments    </string>
+     </attribute>
+     <layout class="QVBoxLayout" name="vbox_tab1">
+      <item>
+       <layout class="QHBoxLayout" name="layout_toolbar">
+        <item>
+         <widget class="QPushButton" name="pushButtonAdd">
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    background-color: #ffffff;
+    border: 2px solid #d8cfc4;
+    border-radius: 10px;
+    padding: 6px 14px;
+    font-size: 15px;
+font-family: &quot;Inter&quot;;
+}
+
+QPushButton:hover {
+    background-color: #ebd6c1;
+}
+
+QPushButton:checked {
+    background-color: #7b6046;
+    color: white;
+    border: none;
+}
+</string>
+          </property>
+          <property name="text">
+           <string>Add Appointment</string>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButtonClearFilters">
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    background-color: #ffffff;
+    border: 2px solid #d8cfc4;
+    border-radius: 10px;
+    padding: 6px 14px;
+    font-size: 15px;
+font-family: &quot;Inter&quot;;
+}
+
+QPushButton:hover {
+    background-color: #ebd6c1;
+}
+
+QPushButton:checked {
+    background-color: #7b6046;
+    color: white;
+    border: none;
+}
+</string>
+          </property>
+          <property name="text">
+           <string>Clear Filters</string>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButtonConfirmed">
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    background-color: #E6F4EA;       
+    color: #2E7D32;                   
+    border: 1px solid #81C784;
+    border-radius: 10px;
+    padding: 6px 14px;
+    font-size: 15px;
+font-family: &quot;Inter&quot;;
+    font-weight: 600;
+}
+
+QPushButton:hover {
+    background-color: #C8E6C9;
+}
+
+QPushButton:checked {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+}
+
+</string>
+          </property>
+          <property name="text">
+           <string>Confirmed</string>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButtonPending">
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    background-color: #FDECEA;       
+    color: #C62828;                 
+    border: 1px solid #EF9A9A;
+    border-radius: 10px;
+    padding: 6px 14px;
+    font-size: 15px;
+font-family: &quot;Inter&quot;;
+    font-weight: 600;
+}
+
+QPushButton:hover {
+    background-color: #F9D6D3;
+}
+
+QPushButton:checked {
+    background-color: #E53935;
+    color: white;
+    border: none;
+}
+
+</string>
+          </property>
+          <property name="text">
+           <string>Pending</string>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QDateEdit" name="dateEdit">
+          <property name="styleSheet">
+           <string notr="true">QDateEdit{
+    background-color: #fdf8f3;
+    border: 2px solid #d8cfc4;
+    border-radius: 10px;
+    padding: 6px 14px;
+    font-size: 15px;
+font-family: &quot;Inter&quot;;
+}
+
+QDateEdit:placeholder {
+    color: #a67c5b;  
+}</string>
+          </property>
+          <property name="displayFormat">
+           <string>dd/MM/yyyy</string>
+          </property>
+          <property name="calendarPopup">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="spacer">
+          <property name="orientation">
+           <enum>Qt::Orientation::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="search_box">
+          <property name="styleSheet">
+           <string notr="true">QLineEdit {
+    background-color: #ffffff;
+    border: 1px solid #d8cfc4;
+    border-radius: 10px;
+    padding: 6px 12px;
+    font-size: 14px;
+font-family: &quot;Inter&quot;;
+}
+
+QLineEdit:focus {
+    border: 1.5px solid #7b6046;
+}
+</string>
+          </property>
+          <property name="placeholderText">
+           <string>Search…</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QTableWidget" name="tableWidgetBooking">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);
+font-size: 16px;
+	color: rgb(3, 3, 3);
+font-family: &quot;Inter&quot;;
+
+</string>
+        </property>
+        <property name="verticalScrollBarPolicy">
+         <enum>Qt::ScrollBarPolicy::ScrollBarAlwaysOn</enum>
+        </property>
+        <column>
+         <property name="text">
+          <string>ID</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Name</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Phone</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Date</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Time</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Package</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Concept</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Location</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Status</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Created At</string>
+         </property>
+        </column>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame_form_left_2">
+    <property name="geometry">
+     <rect>
+      <x>840</x>
+      <y>430</y>
+      <width>341</width>
+      <height>161</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QFrame {
+    background-color: #fffdf8;
+    border: 2px solid #7b6046;
+    border-radius: 28px;
+ padding: 2px;
+}
+</string>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_3">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QLabel" name="label_7">
+         <property name="font">
+          <font>
+           <family>Inter</family>
+           <pointsize>-1</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+QLabel {
+    background: transparent;
+    border: none;
+font-size: 16px;
+	color: rgb(3, 3, 3);
+font-family: &quot;Inter&quot;;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:700;&quot;&gt;STATUS&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="radioButtonConfirmed">
+         <property name="styleSheet">
+          <string notr="true">QRadioButton {
+    background-color: #E6F4EA;       
+    color: #2E7D32;                   
+    border: 1px solid #81C784;
+    border-radius: 10px;
+    padding: 6px 14px;
+    font-size: 15px;
+font-family: &quot;Inter&quot;;
+    font-weight: 600;
+}
+
+QRadioButton:hover {
+    background-color: #C8E6C9;
+}
+
+QRadioButton:checked {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Confirmed</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="radioButtonPending">
+         <property name="styleSheet">
+          <string notr="true">QRadioButton {
+    background-color: #FFF3E0;       
+    color: #E65100;                 
+    border: 1px solid #FFCC80;
+    border-radius: 10px;
+    padding: 6px 14px;
+    font-size: 15px;
+    font-family: &quot;Inter&quot;;
+    font-weight: 600;
+}
+
+QRadioButton:hover {
+    background-color: #FFE0B2;
+}
+
+QRadioButton:checked {
+    background-color: #FB8C00;
+    color: white;
+    border: none;
+}</string>
+         </property>
+         <property name="text">
+          <string>Pending</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="radioButtonCancel">
+         <property name="styleSheet">
+          <string notr="true">QRadioButton {
+    background-color: #FDECEA;       
+    color: #C62828;                 
+    border: 1px solid #EF9A9A;
+    border-radius: 10px;
+    padding: 6px 14px;
+    font-size: 15px;
+font-family: &quot;Inter&quot;;
+    font-weight: 600;
+}
+
+QRadioButton:hover {
+    background-color: #F9D6D3;
+}
+
+QRadioButton:checked {
+    background-color: #E53935;
+    color: white;
+    border: none;
+}
+
+</string>
+         </property>
+         <property name="text">
+          <string>Cancel</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QFrame" name="frame_form_left">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>370</y>
+      <width>821</width>
+      <height>341</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QFrame {
+    background-color: #fffdf8;
+    border: 2px solid #7b6046;
+    border-radius: 28px;
+ padding: 2px;
+}
+</string>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="5" column="0">
+        <widget class="QLabel" name="label_2">
+         <property name="styleSheet">
+          <string notr="true">
+QLabel {
+    background: transparent;
+    border: none;
+font-size: 16px;
+	color: rgb(3, 3, 3);
+font-family: &quot;Inter&quot;;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Date:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="label">
+         <property name="styleSheet">
+          <string notr="true">
+QLabel {
+    background: transparent;
+    border: none;
+font-size: 16px;
+	color: rgb(3, 3, 3);
+font-family: &quot;Inter&quot;;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Phone number:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_5">
+         <property name="styleSheet">
+          <string notr="true">
+QLabel {
+    background: transparent;
+    border: none;
+font-size: 16px;
+	color: rgb(3, 3, 3);
+font-family: &quot;Inter&quot;;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Email:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="lineEditName"/>
+       </item>
+       <item row="3" column="1">
+        <widget class="QLineEdit" name="lineEditPhone"/>
+       </item>
+       <item row="7" column="1">
+        <widget class="QLineEdit" name="lineEditLocation"/>
+       </item>
+       <item row="5" column="1">
+        <widget class="QLineEdit" name="lineEditDate"/>
+       </item>
+       <item row="6" column="1">
+        <widget class="QLineEdit" name="lineEditTime"/>
+       </item>
+       <item row="4" column="0" colspan="2">
+        <widget class="QLabel" name="label_12">
+         <property name="font">
+          <font>
+           <family>Inter</family>
+           <pointsize>-1</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel {
+    background: transparent;
+    border: none;
+font-size: 16px;
+	color: rgb(3, 3, 3);
+font-family: &quot;Inter&quot;;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:700;&quot;&gt;SHOOTING TIME&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLineEdit" name="lineEditEmail"/>
+       </item>
+       <item row="7" column="0">
+        <widget class="QLabel" name="label_4">
+         <property name="styleSheet">
+          <string notr="true">
+QLabel {
+    background: transparent;
+    border: none;
+font-size: 16px;
+	color: rgb(3, 3, 3);
+font-family: &quot;Inter&quot;;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Location:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0" colspan="2">
+        <widget class="QLabel" name="label_11">
+         <property name="font">
+          <font>
+           <family>Inter</family>
+           <pointsize>-1</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel {
+    background: transparent;
+    border: none;
+font-size: 16px;
+	color: rgb(3, 3, 3);
+font-family: &quot;Inter&quot;;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:700;&quot;&gt;CUSTOMER DETAILS&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label">
+         <property name="styleSheet">
+          <string notr="true">
+QLabel {
+    background: transparent;
+    border: none;
+font-size: 16px;
+	color: rgb(3, 3, 3);
+font-family: &quot;Inter&quot;;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Customer:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="0">
+        <widget class="QLabel" name="label_3">
+         <property name="styleSheet">
+          <string notr="true">
+QLabel {
+    background: transparent;
+    border: none;
+font-size: 16px;
+	color: rgb(3, 3, 3);
+font-family: &quot;Inter&quot;;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Time:</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <layout class="QGridLayout" name="gridLayout_2">
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_19">
+           <property name="styleSheet">
+            <string notr="true">
+QLabel {
+    background: transparent;
+    border: none;
+font-size: 16px;
+	color: rgb(3, 3, 3);
+font-family: &quot;Inter&quot;;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Package:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="lineEditPackage"/>
+         </item>
+         <item row="3" column="1">
+          <widget class="QLineEdit" name="lineEditPromo"/>
+         </item>
+         <item row="0" column="0" colspan="2">
+          <widget class="QLabel" name="label_15">
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>100</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Inter</family>
+             <pointsize>-1</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+    background: transparent;
+    border: none;
+font-size: 16px;
+	color: rgb(3, 3, 3);
+font-family: &quot;Inter&quot;;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:700;&quot;&gt;SERVICE &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLineEdit" name="lineEditConcept"/>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_20">
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+    background: transparent;
+    border: none;
+font-size: 16px;
+	color: rgb(3, 3, 3);
+font-family: &quot;Inter&quot;;
+}</string>
+           </property>
+           <property name="text">
+            <string>Concept:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="label_21">
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+    background: transparent;
+    border: none;
+font-size: 16px;
+	color: rgb(3, 3, 3);
+font-family: &quot;Inter&quot;;
+}</string>
+           </property>
+           <property name="text">
+            <string>Promo:</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QGridLayout" name="gridLayout_4">
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="lineEditNote">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>90</height>
+            </size>
+           </property>
+           <property name="sizeIncrement">
+            <size>
+             <width>0</width>
+             <height>50</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_25">
+           <property name="styleSheet">
+            <string notr="true">
+QLabel {
+    background: transparent;
+    border: none;
+font-size: 16px;
+	color: rgb(3, 3, 3);
+font-family: &quot;Inter&quot;;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Note:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0" colspan="2">
+          <widget class="QLabel" name="label_17">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="sizeIncrement">
+            <size>
+             <width>0</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Inter</family>
+             <pointsize>-1</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+    background: transparent;
+    border: none;
+font-size: 16px;
+	color: rgb(3, 3, 3);
+font-family: &quot;Inter&quot;;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;NOTE&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="pushButtonBack">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>20</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: transparent;
+</string>
+    </property>
+    <property name="text">
+     <string>Back</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../../guest_ui/contact/images/left_arrow.png</normaloff>../../../guest_ui/contact/images/left_arrow.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>30</width>
+      <height>30</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>840</x>
+      <y>380</y>
+      <width>331</width>
+      <height>46</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="pushButtonCancel">
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 18px;
+    font-weight: 600;
+ font-size: 15px;
+font-family: &quot;Inter&quot;;
+}
+
+QPushButton:hover {
+    background-color: #c0392b;
+}
+
+QPushButton:pressed {
+    background-color: #922b21;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Cancel</string>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButtonConfirm">
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 18px;
+    font-weight: 600;
+ font-size: 15px;
+font-family: &quot;Inter&quot;;
+}
+
+QPushButton:hover {
+    background-color: #27ae60;
+}
+
+QPushButton:pressed {
+    background-color: #1e8449;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Confirm </string>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButtonEdit">
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 18px;
+    font-weight: 600;
+ font-size: 15px;
+font-family: &quot;Inter&quot;;
+}
+
+QPushButton:hover {
+    background-color: #2e86c1;
+}
+
+QPushButton:pressed {
+    background-color: #21618c;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Update</string>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <zorder>lbl_title</zorder>
+   <zorder>tabWidget</zorder>
+   <zorder>layoutWidget</zorder>
+   <zorder>pushButtonBack</zorder>
+   <zorder>frame_form_left</zorder>
+   <zorder>frame_form_left_2</zorder>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
